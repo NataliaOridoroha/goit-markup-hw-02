@@ -1,10 +1,21 @@
+:root {
+    --brand-color: #2E2F42;
+    --brand-second-color: #434455;
+    --brend-background: #FFFFFF;
+    --button-background: #4D5AE5;
+  }
+
 /* Top Line */
 .list {
-    list-style: none;
+ list-style: none;
 }
 
 .link {
 text-decoration: none;
+}
+
+header {
+background: var(--brend-background);
 }
 
 /* Logo */
@@ -14,21 +25,27 @@ font-family: 'Raleway', sans-serif;
 font-weight: 800;
 font-size: 18px;
 line-height: 1.3;
+align-items: center;
 letter-spacing: 0.03em;
-color: #4D5AE5;
+color: var(--button-background);
+text-transform: uppercase;
 }
 
 .studio {
-    color: #2E2F42;
+color: var(--brand-color);
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
 }
 
 .menu {
  font-family: 'Roboto', sans-serif;
- font-weight: 600;
+ font-weight: 700;
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.02em;
- color: #2E2F42;  
+ color: var(--brand-color) ;  
 
 }
 
@@ -36,8 +53,11 @@ color: #4D5AE5;
 .menu:focus,
 .contact:hover,
 .contact:focus {
- color: #4D5AE5;
+ color: var(--button-background);
 }
+
+
+
 
 .contact {
  font-family: 'Roboto', sans-serif;
@@ -45,7 +65,7 @@ color: #4D5AE5;
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.02em;
- color: #434455;
+ color: var(--brand-second-color) ;
 }
 
 .button {
@@ -53,7 +73,7 @@ width: 170px;
 height: 51px;
 left: 20px;
 top: 20px;
-background: #4D5AE5;
+background: var(--button-background) ;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
 cursor: pointer;
@@ -62,42 +82,27 @@ cursor: pointer;
 
 .text {
 font-family: 'Roboto', sans-serif;
-font-weight: 600;
+font-weight: 700;
 font-size: 16px;
 line-height: 1.2;
 align-items: center;
 letter-spacing: 0.04em;
 color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
 cursor: pointer;
 
 }
 
 .button:hover {
-width: 170px;
-height: 51px;
-left: 20px;
-top: 88px;
-background: #4D5AE5;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-border-radius: 4px;
+background: var(--button-background) ;
 }
 
 .button:focus {
-    width: 170px;
-    height: 51px;
-    left: 20px;
-    top: 156px;
-    background: #404BBF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+ background: #404BBF;
 }
 
 /* hero */
 .hero {
- background: #2E2F42;
+ background: var(--brand-color) ;
  width: 1440px;
  height: 603px;
  left: 0px;
@@ -108,7 +113,7 @@ border-radius: 4px;
 
 h1 {
  font-family: 'Roboto', sans-serif;
- font-weight: 600;
+ font-weight: 700;
  font-size: 56px;
  line-height: 1.1;
  letter-spacing: 0.02em;
@@ -118,24 +123,24 @@ color: #FFFFFF;
 
 h2 {
 font-family: 'Roboto', sans-serif;
-font-weight: 600;
+font-weight: 700;
 font-size: 36px;
 line-height: 1.1;
 text-align: center;
 letter-spacing: 0.02em;
 text-transform: capitalize;
-color: #2E2F42;
+color: var(--brand-color) ;
 
    }
 
 
 h3 {
  font-family: 'Roboto', sans-serif;
- font-weight: 600;
+ font-weight: 700;
  font-size: 20px;
  line-height: 1.2;
  letter-spacing: 0.02em;
- color: #2E2F42;
+ color: var(--brand-color) ;
 }
 
 h4 {
@@ -144,7 +149,7 @@ h4 {
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.02em;
- color: #434455;
+ color: var(--brand-second-color) ;
   }
 
 p {
@@ -153,12 +158,24 @@ p {
  font-size: 16px;
  line-height: 1.5;
  letter-spacing: 0.02em;
- color: #434455;
+ color: var(--brand-second-color) ;
+}
+
+.section2 {
+background: var(--brend-background) ;
+}
+
+.section3 {
+background: #F4F4FD;
+}
+
+.our-team {
+background: var(--brend-background);
 }
 
 /* footer */
 footer {
-background: #2E2F42;
+background: var(--brand-color) ;
 width: 1440px;
 height: 310px;
 left: 0px;
@@ -175,58 +192,41 @@ top: 2283px;
 }
 
 .studio-footer {
-    color: #F4F4FD;
+color: #F4F4FD;
+text-transform: uppercase;
 }
 
 /* portfolio-button */
 
 .portfolio-button {
-box-sizing: border-box;
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
 padding: 8px 16px;
 width: 126px;
 height: 48px;
 background: #F4F4FD;
 border: 1px solid #E7E9FC;
 border-radius: 4px;
-flex: none;
-order: 4;
-flex-grow: 0;
 cursor: pointer;
 
 }
 
 .portfolio-text {
 font-family: 'Roboto', sans-serif;
-font-weight: 600;
+font-weight: 700;
 font-size: 16px;
 line-height: 1.5;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
-color: #4D5AE5;
-flex: none;
-order: 0;
-flex-grow: 0;
+color: #4D5AE5 ;
 cursor: pointer;
 }
 
 .menu-portfolio :hover,
 .menu-portfolio :focus {
-background: #4D5AE5;
-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+background: var(--button-background) ;
 border-radius: 4px;
-flex: none;
-order: 0;
-flex-grow: 0;
 align-items: center;
 text-align: center;
 letter-spacing: 0.04em;
 color: #FFFFFF;
-flex: none;
-order: 0;
-flex-grow: 0;
    }
